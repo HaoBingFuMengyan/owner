@@ -1,0 +1,22 @@
+
+spring:
+  profiles:
+    active: dev
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  jpa:
+    database-platform: com.owner.dao.sqlite.SQLiteDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    generate-ddl: true
+
+
+
+#jsp support
+
+#访问静态资源目录
+#spring.mvc.static-path-pattern=/static/**
+#spring.resources.static-locations=classpath:/static

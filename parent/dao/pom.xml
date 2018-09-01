@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.owner</groupId>
+	<artifactId>dao</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>dao</name>
+	<description>Demo project for Spring Boot</description>
+
+	<parent>
+		<groupId>com.owner</groupId>
+		<artifactId>parent</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<dependencies>
+		<!--Springboot集成sqlite数据库，并使用jpa、Hibernate操作sqlite-->
+		<dependency>
+			<groupId>org.xerial</groupId>
+			<artifactId>sqlite-jdbc</artifactId>
+		</dependency>
+		<!-- 用于配置数据源 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
+		</dependency>
+
+		<!--使用lombok-->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+
+		<!--引入po、heart模块-->
+		<dependency>
+			<groupId>com.owner</groupId>
+			<artifactId>po</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.owner</groupId>
+			<artifactId>heart</artifactId>
+		</dependency>
+
+	</dependencies>
+
+
+</project>
