@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Map;
 
 public abstract class BaseService<T> {
-//    protected abstract Class<T> getDomainClass();
+    protected abstract Class<T> getDomainClass();
 
     protected abstract BaseDao<T, String> getBaseDao();
 
@@ -32,9 +32,9 @@ public abstract class BaseService<T> {
 
     public static Logger log = LoggerFactory.getLogger(BaseService.class);
 
-    public Class<T> getDomainClass() {
-        return this.getBaseDao().getDomainClass();
-    }
+//    public Class<T> getDomainClass() {
+//        return this.getBaseDao().getDomainClass();
+//    }
 
     /**
      * 获取所有单据编号信息列表 List<Product>
